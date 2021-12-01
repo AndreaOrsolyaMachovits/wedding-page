@@ -1,0 +1,270 @@
+/* ==== BASE STYLES ==== */
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, p, ul, img {
+   margin-bottom: 1rem;
+}
+
+body {
+  background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png') repeat center;
+  color: #444349;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+.location, .program, .gifts, .question-answer, .contact {
+  width: 95%;
+  margin: 1.5rem auto;
+  padding: 0.5rem 1rem;
+  text-align: center;   
+}
+
+h1, h2 {
+  font-family: 'Great Vibes', cursive;
+}
+
+h1 {
+  font-size: 3.15rem;
+  color: #d2ba87;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+a {
+  color: #bd806e;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #eda087;
+}
+
+/* ==== HEADER STYLES ==== */
+
+.cover {
+  background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat 70% center/cover;
+  display: table;
+  width: 100%;
+  height: 100vh;
+  text-align: center; 
+}
+
+.text-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.text {
+  background: hsla(100,0%,0%,.6);
+  color:hsla(0,0%,100%,.9);
+  margin: 0 auto;
+  padding: .625rem;
+}
+
+.tagline, .date{
+  font-size: 1.25rem;
+  letter-spacing: .15rem;
+}
+
+.date {
+  vertical-align: middle;    
+}
+
+.tagline::after {
+  display: block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 12.515625rem;
+  margin: .5rem auto;
+}
+
+.date::before, .date::after {
+  display: inline-block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 1.5rem;
+  margin: 0 .5rem;
+  vertical-align: middle;
+}
+
+@media (min-width: 768px) {
+  .cover {
+    background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat center/cover;
+  }
+  .text {
+    width: 50%;
+    padding: 1.25rem;
+    border-radius: 5px;
+  }
+  .tagline {
+    text-transform: uppercase;
+  }
+   h1 {
+    font-size: 7rem;
+  }
+}
+
+
+/* ==== LOCATION STYLES ==== */
+
+
+.addresses div{
+  font-family: 'Mulish', sans-serif;
+}
+
+.addresses img {
+  height: 7.5rem;
+}
+
+.addresses::after {
+  display: block;
+  content: "";
+  background-color: #444349;
+  height: .1875rem;
+  width: 25vw;
+  margin: 1.5rem auto;    
+}
+
+@media (min-width: 768px) {
+  .addresses {
+    display: inline-block;
+    width: 30%;
+    padding: 1.5rem;
+    margin: .5rem;
+  }
+  .addresses::after {
+    display: none;
+  }
+}
+
+/* ==== PROGRAM STYLES ====*/
+
+
+.program {
+  background: hsla(100,0%,0%,.6);
+  color: #d2ba87;
+  font-family: 'Mulish', sans-serif;
+  width: 100vw;
+  text-align: left;
+}
+
+.program h2 {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.program p {
+  font-style: italic;
+}
+
+@media (min-width: 768px) {
+  .program-wrapper {
+    width: 30vw;
+    margin: 0 auto;
+  }
+}
+
+/* ==== GIFTS STYLES ====*/
+
+.gifts img {
+  height: 7.5rem;
+}
+
+.gifts p:last-child {
+  margin-bottom: 0;
+}
+
+
+ 
+/* ==== QUESTION-ANSWER STYLES ====*/
+
+.question-answer {
+  background: hsla(100,0%,0%,.6);
+  color: #d2ba87;  
+  width: 100vw;
+  text-align: center;
+}
+
+.question-answer h2 {
+  margin-top: 1rem;
+}
+
+.question-answer p {
+  font-family: 'Mulish', sans-serif;
+  text-align: left;
+}
+
+.question {
+  font-weight: 700;
+  margin-bottom: .5rem;
+}
+
+.answer {
+  margin-bottom: 1.5rem;  
+}
+
+.question-types::after {
+  display: block;
+  content: "";
+  height: .1875rem;
+  width: 50vw;
+  margin: 1.5rem auto;
+  background-color: #d2ba87; 
+}
+
+@media (min-width: 768px){
+  .question-types {
+    display: inline-block;
+    width: 30%;
+    padding: 1.5rem;
+    margin: .5rem;
+    vertical-align: top;
+  }
+  
+  .question-types h3 {
+    text-align: left;
+  }
+  .question-types::after {
+    display: none;
+  }
+}
+
+
+/* ==== FOOTER STYLES ====*/
+
+
+footer {
+  display:table;
+  background: #606060;
+  width: 100vw;
+  height:10vh;
+  font-family: 'Mulish', sans-serif;
+  color: #fff;
+  font-size: .875rem;
+  text-align: center;
+}
+
+.footer-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0.5rem 1rem;
+}
+
+@media (min-width: 768px) {
+  footer {
+    height: 8vh;
+  }
+}
